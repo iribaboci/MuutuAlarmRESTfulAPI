@@ -88,7 +88,7 @@ public class MuutuAlarmRESTfulAPI {
             
             URL url = new URL(ur);
             HttpURLConnection http = (HttpURLConnection) url.openConnection();
-            http.addRequestProperty("Authorization","Basic "+ Base64.getEncoder().encodeToString("Muutu:Mu12rTq12".getBytes()));
+            http.addRequestProperty("Authorization","Basic "+ Base64.getEncoder().encodeToString("username:password".getBytes()));
 
             http.setDoInput(true);
             http.setDoOutput(true);    
@@ -133,7 +133,7 @@ public class MuutuAlarmRESTfulAPI {
         try {
             URL url = new URL(ur);
             HttpURLConnection http = (HttpURLConnection) url.openConnection();
-            http.addRequestProperty("Authorization","Basic "+ Base64.getEncoder().encodeToString("Muutu:Mu12rTq12".getBytes()));
+            http.addRequestProperty("Authorization","Basic "+ Base64.getEncoder().encodeToString("username:password".getBytes()));
             
             http.setDoOutput(true);
             http.setRequestProperty("Content-Type", "application/xml" );
@@ -169,7 +169,7 @@ public class MuutuAlarmRESTfulAPI {
         try {
             URL url = new URL(ur);
             HttpURLConnection http = (HttpURLConnection) url.openConnection();
-            http.addRequestProperty("Authorization","Basic "+ Base64.getEncoder().encodeToString("Muutu:Mu12rTq12".getBytes()));
+            http.addRequestProperty("Authorization","Basic "+ Base64.getEncoder().encodeToString("username:password".getBytes()));
             
             
             int i = http.getResponseCode();
